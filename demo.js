@@ -62,7 +62,7 @@ function switchSlider(n) {
 	ctrl.className += ' ctrl-i_active';
 	setTimeout(function(){
 		g('main_background').innerHTML = main.innerHTML;
-	},1000);
+	},500);
 }
 function reloacatePics() {
 	var pictures = g('.picture');
