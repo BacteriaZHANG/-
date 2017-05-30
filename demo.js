@@ -80,8 +80,8 @@ var timer = null;
 var slider = g('.slider')[0];
 function autoSlider() {
 	timer = setInterval(function() {
+		if(id > len - 1) {id = 0};
 		switchSlider(++id);
-		if(id > len) {id = 1};
 	}, 5000);
 }
 function stopSlider() {
