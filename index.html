@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+</head>
+<body>
+<div class="slider">
+	<div class="main" id="template_main">
+		<div class="main-i {{css}}" id="main_{{index}}">
+			<div class="caption">
+				<h2>{{h2}}</h2>
+				<h3>{{h3}}</h3>
+			</div>
+			<img src="images/{{index}}.jpg" class="picture">
+		</div>
+	</div>
+	<div class="ctrl" id="template_ctrl">
+		<a class="ctrl-i" id="ctrl_{{index}}" href="javascript:;">
+			<img src="images/{{index}}.jpg">
+		</a>
+	</div>
+</div>
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>
