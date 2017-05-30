@@ -90,7 +90,7 @@ function stopSlider() {
 window.onload = function() {
 	changeTemplate();
 	switchSlider(1);
-	setTimeout(reloacatePics,100);
+	setTimeout(reloacatePics,10);
 	addHandler(template_ctrl, 'click', handler);
 	addHandler(slider, 'mouseover', stopSlider);
 	addHandler(slider, 'mouseout', autoSlider);
